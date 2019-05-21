@@ -184,9 +184,9 @@ namespace MessagePack.Internal
 
 #if !ENABLE_IL2CPP && !UNITY_WSA && !NET_STANDARD_2_0
 
-            DynamicEnumResolver.Instance, // Try Enum
-            DynamicGenericResolver.Instance, // Try Array, Tuple, Collection
-            DynamicUnionResolver.Instance, // Try Union(Interface)
+            //DynamicEnumResolver.Instance, // Try Enum
+            //DynamicGenericResolver.Instance, // Try Array, Tuple, Collection
+            //DynamicUnionResolver.Instance, // Try Union(Interface)
 #endif
         };
     }
@@ -198,7 +198,8 @@ namespace MessagePack.Internal
         static readonly IFormatterResolver[] resolvers = StandardResolverHelper.DefaultResolvers.Concat(new IFormatterResolver[]
         {
 #if !ENABLE_IL2CPP && !UNITY_WSA && !NET_STANDARD_2_0
-            DynamicObjectResolver.Instance, // Try Object
+            //DynamicObjectResolver.Instance, // Try Object
+            GeneratedResolver.Instance,
 #elif UNITY_ANDROID || UNITY_IOS || UNITY_EDITOR
             GeneratedResolver.Instance,
 #endif
