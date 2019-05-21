@@ -1,0 +1,12 @@
+SampleMessagePack/Library/
+SampleMessagePack/Temp/
+SampleMessagePack/obj/
+SampleMessagePack/Logs/
+SampleMessagePack/.vs/
+SampleMessagePack/Unity.TextMeshPro.csproj
+SampleMessagePack/Unity.TextMeshPro.Editor.csproj
+SampleMessagePack/Unity.PackageManagerUI.Editor.csproj
+SampleMessagePack/Unity.CollabProxy.Editor.csproj
+SampleMessagePack/Unity.Analytics.DataPrivacy.csproj
+SampleMessagePack/SampleMessagePack.sln
+SampleMessagePack/Assembly-CSharp.csproj
